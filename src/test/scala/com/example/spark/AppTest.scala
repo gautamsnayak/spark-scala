@@ -20,6 +20,8 @@ class AppTest extends FunSuite with SharedSparkContext with DataFrameSuiteBase {
 
     assertDataFrameEquals(expectedAgeDf, generateData.select("age"))
 
+    assert("20", "20")
+
   }
 
 }
